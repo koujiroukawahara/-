@@ -23,12 +23,18 @@ namespace ツール制作
 		{
 			MySqlConnection cn = new MySqlConnection("Data Source=localhost;Database = test;User Id = root;Password = Koujirou6;");
 
+			int PriceValue = int.Parse(this.Price.Text);
+			Console.WriteLine(PriceValue);
+
 			//コマンドの作成
 
-			MySqlCommand MySqlCommand = new MySqlCommand(String.Format("INSERT INTO `test`.`usedlist` (`Number`, `Bought`, `Price`) VALUES('{0}', {1}, '{2}');", this.Number.Text, this.Bought.Text, this.Price.Text), cn);
+			MySqlCommand MySqlCommand = new MySqlCommand(String.Format("INSERT INTO `test`.`usedlist` (`Bought`, `Price`) VALUES('{0}', {1});", this.Bought.Text, PriceValue), cn);
 			MySqlCommand.Connection.Open();
 			MySqlCommand.ExecuteNonQuery();
 			MySqlCommand.Connection.Close();
+
+			this.Bought.Text = "";
+			this.Price.Text = "";
 		}
 
 		private void Label3_Click(object sender, EventArgs e)
@@ -59,17 +65,6 @@ namespace ツール制作
 
 		}
 
-		private void Number_Validating(object sender, CancelEventArgs e)
-		{
-			if (!Number.Text.All(char.IsDigit))
-			{
-				this.errorProvider1.SetError(this.Number, "数値を入力してください");
-			}
-			else
-			{
-				this.errorProvider1.SetError(this.Number, string.Empty);
-			}
-		}
 
 		private void Add_Load(object sender, EventArgs e)
 		{
@@ -77,6 +72,11 @@ namespace ツール制作
 		}
 
 		private void Label1_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void Bought_TextChanged(object sender, EventArgs e)
 		{
 
 		}
