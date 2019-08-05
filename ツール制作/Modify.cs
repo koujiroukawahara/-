@@ -38,12 +38,15 @@ namespace tool
 
 				MySqlConnection cn = new MySqlConnection("Data Source=localhost;Database = test;User Id = root;Password = Koujirou6;");
 
-				//MySqlCommand Command = new MySqlCommand(String.Format("DELETE FROM `test`.`usedlist` WHERE(`Number`)VALUES('{0}');", this.Number.Text), cn);
-				MySqlCommand Command = new MySqlCommand(String.Format("DELETE FROM `test`.`usedlist` WHERE(`Number`)VALUES('{0}');", ID), cn);
+				//MySqlCommand Command = new MySqlCommand(String.Format("DELETE FROM `test`.`usedlist` WHERE(`Number`= '8');"), cn);
+				MySqlCommand Command = new MySqlCommand(String.Format("DELETE FROM `test`.`usedlist` WHERE(`Number` = {0});", ID), cn);
 
 				Command.Connection.Open();
 				Command.ExecuteNonQuery();
 				Command.Connection.Close();
+
+				var frmMenu = new Menu();
+				frmMenu.Show();
 			}
 		}
 

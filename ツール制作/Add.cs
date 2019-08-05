@@ -39,6 +39,9 @@ namespace tool
 
 				this.Bought.Text = "";
 				this.Price.Text = "";
+
+				var frmMenu = new Menu();
+				frmMenu.Show();
 			}
 		}
 
