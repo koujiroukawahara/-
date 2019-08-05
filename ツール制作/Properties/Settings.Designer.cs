@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ツール制作.Properties
+namespace tool.Properties
 {
 
 

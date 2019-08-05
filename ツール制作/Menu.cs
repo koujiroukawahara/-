@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ツール制作
+namespace tool
 {
 	public partial class Menu : Form
 	{
@@ -28,5 +28,11 @@ namespace ツール制作
 			var frmAdd = new Add();
 			frmAdd.Show();
 		}
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+			var frmModify = new Modify();
+			frmModify.Show();
+		}		
 	}
 }

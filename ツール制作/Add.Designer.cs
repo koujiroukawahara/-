@@ -1,4 +1,4 @@
-﻿namespace ツール制作
+﻿namespace tool
 {
 	partial class Add
 	{

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ツール制作
+namespace tool
 {
 	static class Program
 	{

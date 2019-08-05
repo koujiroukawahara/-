@@ -2,7 +2,7 @@
 using System.Data;
 using MySql.Data.MySqlClient;
 
-namespace ツール制作
+namespace tool
 {
 	static class Connection
 	{
