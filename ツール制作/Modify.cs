@@ -20,17 +20,17 @@ namespace tool
 			InitializeComponent();
 		}
 
-		private void TextBox2_TextChanged(object sender, EventArgs e)
+		private void Number_TextChanged(object sender, EventArgs e)
 		{
 
 		}
 
-		private void Label1_Click(object sender, EventArgs e)
+		private void NumberLavel_Click(object sender, EventArgs e)
 		{
 
 		}
 
-		private void button1_Click(object sender, EventArgs e)
+		private void ModifyEnter_Click(object sender, EventArgs e)
 		{
 			if (IsNumber)
 			{
@@ -38,7 +38,6 @@ namespace tool
 
 				MySqlConnection cn = new MySqlConnection("Data Source=localhost;Database = test;User Id = root;Password = Koujirou6;");
 
-				//MySqlCommand Command = new MySqlCommand(String.Format("DELETE FROM `test`.`usedlist` WHERE(`Number`= '8');"), cn);
 				MySqlCommand Command = new MySqlCommand(String.Format("DELETE FROM `test`.`usedlist` WHERE(`Number` = {0});", ID), cn);
 
 				Command.Connection.Open();

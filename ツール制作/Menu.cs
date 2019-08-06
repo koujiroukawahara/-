@@ -15,21 +15,21 @@ namespace tool
 		public Menu()
 		{
 			InitializeComponent();
-			dataGridView1.DataSource = Connection.Load();
+			Table.DataSource = Connection.Load();
 		}
 
-		private void DataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		private void Table_CellContentClick(object sender, DataGridViewCellEventArgs e)
 		{
 
 		}
 
-		private void Button1_Click(object sender, EventArgs e)
+		private void Add_Click(object sender, EventArgs e)
 		{
 			var frmAdd = new Add();
 			frmAdd.Show();
 		}
 
-		private void button2_Click(object sender, EventArgs e)
+		private void Modify_Click(object sender, EventArgs e)
 		{
 			var frmModify = new Modify();
 			frmModify.Show();
