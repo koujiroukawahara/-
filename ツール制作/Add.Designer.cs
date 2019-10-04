@@ -46,7 +46,6 @@
 			this.Bought.Name = "Bought";
 			this.Bought.Size = new System.Drawing.Size(100, 19);
 			this.Bought.TabIndex = 1;
-			this.Bought.TextChanged += new System.EventHandler(this.Bought_TextChanged);
 			// 
 			// Price
 			// 
@@ -54,7 +53,6 @@
 			this.Price.Name = "Price";
 			this.Price.Size = new System.Drawing.Size(100, 19);
 			this.Price.TabIndex = 2;
-			this.Price.TextChanged += new System.EventHandler(this.Price_TextChanged);
 			this.Price.Validating += new System.ComponentModel.CancelEventHandler(this.Price_Validating);
 			// 
 			// label2
@@ -74,7 +72,6 @@
 			this.label3.Size = new System.Drawing.Size(61, 12);
 			this.label3.TabIndex = 5;
 			this.label3.Text = "値段(数字)";
-			this.label3.Click += new System.EventHandler(this.Label3_Click);
 			// 
 			// button1
 			// 
@@ -106,7 +103,6 @@
 			this.Controls.Add(this.Bought);
 			this.Name = "Add";
 			this.Text = "Add";
-			this.Load += new System.EventHandler(this.Add_Load);
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
 			this.ResumeLayout(false);

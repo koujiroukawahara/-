@@ -20,15 +20,6 @@ namespace tool
 			InitializeComponent();
 		}
 
-		private void Number_TextChanged(object sender, EventArgs e)
-		{
-
-		}
-
-		private void NumberLavel_Click(object sender, EventArgs e)
-		{
-
-		}
 
 		private void ModifyEnter_Click(object sender, EventArgs e)
 		{
@@ -61,11 +52,6 @@ namespace tool
 				this.errorProvider1.SetError(this.Number, string.Empty);
 				IsNumber = true;
 			}
-		}
-
-		private void Modify_Load(object sender, EventArgs e)
-		{
-
 		}
 	}
 }

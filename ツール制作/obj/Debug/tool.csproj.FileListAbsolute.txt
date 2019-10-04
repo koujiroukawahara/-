@@ -14,4 +14,4 @@ C:\Users\jiros\Desktop\ツール制作\ツール制作\obj\Debug\tool.csproj.Cor
 C:\Users\jiros\Desktop\ツール制作\ツール制作\obj\Debug\tool.csproj.CopyComplete
 C:\Users\jiros\Desktop\ツール制作\ツール制作\obj\Debug\ツール制作.exe
 C:\Users\jiros\Desktop\ツール制作\ツール制作\obj\Debug\ツール制作.pdb
-C:\Users\jiros\Desktop\ツール制作\ツール制作\obj\Debug\tool.csprojAssemblyReference.cache
+C:\Users\jiros\Desktop\ツール制作\ツール制作\obj\Debug\tool.csprojResolveAssemblyReference.cache

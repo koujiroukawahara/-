@@ -18,11 +18,6 @@ namespace tool
 			Table.DataSource = Connection.Load();
 		}
 
-		private void Table_CellContentClick(object sender, DataGridViewCellEventArgs e)
-		{
-
-		}
-
 		private void Add_Click(object sender, EventArgs e)
 		{
 			var frmAdd = new Add();

@@ -42,7 +42,6 @@
 			this.Table.RowTemplate.Height = 21;
 			this.Table.Size = new System.Drawing.Size(776, 361);
 			this.Table.TabIndex = 0;
-			this.Table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Table_CellContentClick);
 			// 
 			// Add
 			// 

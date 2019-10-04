@@ -42,7 +42,6 @@
 			this.Number.Name = "Number";
 			this.Number.Size = new System.Drawing.Size(100, 19);
 			this.Number.TabIndex = 1;
-			this.Number.TextChanged += new System.EventHandler(this.Number_TextChanged);
 			this.Number.Validating += new System.ComponentModel.CancelEventHandler(this.Number_Validating);
 			// 
 			// ModifyEnter
@@ -67,7 +66,6 @@
 			this.NumberLavel.Size = new System.Drawing.Size(87, 12);
 			this.NumberLavel.TabIndex = 2;
 			this.NumberLavel.Text = "修正するNumber";
-			this.NumberLavel.Click += new System.EventHandler(this.NumberLavel_Click);
 			// 
 			// Modify
 			// 
@@ -79,7 +77,6 @@
 			this.Controls.Add(this.Number);
 			this.Name = "Modify";
 			this.Text = "Modify";
-			this.Load += new System.EventHandler(this.Modify_Load);
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();

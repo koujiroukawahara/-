@@ -45,16 +45,6 @@ namespace tool
 			}
 		}
 
-		private void Label3_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void Price_TextChanged(object sender, EventArgs e)
-		{
-
-		}
-
 
 		private void Price_Validating(object sender, CancelEventArgs e)
 		{
@@ -68,27 +58,6 @@ namespace tool
 				this.errorProvider1.SetError(this.Price, string.Empty);
 				IsPriveNumber = true;
 			}
-		}
-
-		private void Number_TextChanged(object sender, EventArgs e)
-		{
-
-		}
-
-
-		private void Add_Load(object sender, EventArgs e)
-		{
-
-		}
-
-		private void Label1_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void Bought_TextChanged(object sender, EventArgs e)
-		{
-
 		}
 	}
 }
