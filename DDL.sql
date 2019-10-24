@@ -8,4 +8,5 @@ CREATE TABLE `uselist` (
 
   `Bought` VARCHAR(45) NOT NULL,
 
-  `Price` INT NOT NULL,
+  `Price` INT NOT NULL
+)
